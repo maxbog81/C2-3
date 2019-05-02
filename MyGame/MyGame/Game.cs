@@ -136,8 +136,8 @@ namespace MyGame
             if (_ship != null)
             {
                 Buffer.Graphics.DrawString("Energy:" + _ship.Energy, SystemFonts.DefaultFont, Brushes.White, 0, 0);
-                Buffer.Graphics.DrawString($"Кол-во очков:{NumPoints}", SystemFonts.DefaultFont, Brushes.White, 60, 0);//подсчет очков
-                Buffer.Graphics.DrawString($"Кол-во аптечек:{Aid}", SystemFonts.DefaultFont, Brushes.White, 180, 0);//аптечка
+                Buffer.Graphics.DrawString($"Кол-во очков:{NumPoints}", SystemFonts.DefaultFont, Brushes.White, 70, 0);//подсчет очков
+                Buffer.Graphics.DrawString($"Кол-во аптечек:{Aid}", SystemFonts.DefaultFont, Brushes.White, 160, 0);//аптечка
             }
             Buffer.Render();
 
