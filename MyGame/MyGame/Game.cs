@@ -35,7 +35,7 @@ namespace MyGame
         /// </summary>
         /// <param name="log"></param>
         /// <param name="Method"></param>
-        static void WriteLogs(string log, GetLogs Method)
+        static void WriteLogs(string log, GetLogs Method) //пишем логи
         { Method(log); }
         public static void Load()
         {
@@ -113,7 +113,7 @@ namespace MyGame
             if (e.KeyCode == Keys.ControlKey) _bullet = new Bullet(new Point(_ship.Rect.X + 10, _ship.Rect.Y + 4), new Point(4, 0), new Size(4, 1));
             if (e.KeyCode == Keys.Up) _ship.Up();
             if (e.KeyCode == Keys.Down) _ship.Down();
-            if (e.KeyCode == Keys.ShiftKey && Aid>0)
+            if (e.KeyCode == Keys.ShiftKey && Aid>0) //аптечки активируются шифтом
             {
                 var rnd = new Random();
                 _ship?.EnergyHigh(rnd.Next(1, 10));
